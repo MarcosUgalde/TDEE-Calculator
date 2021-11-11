@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <nav>
+            <h1>TDEE Calculator</h1>
+        </nav>
+        <form action="/" id="form">
+            <label for="radio1 radio2">Gender</label>
+            <input type="radio" name="gender" id="radio1" value="male" checked />
+            <label for="radio1">Male</label>
+            <input type="radio" name="gender" id="radio2" value="female"/>
+            <label for="radio2">Female</label>
+            <br>
+            <br>
+            <label for=age">Age</label>
+            <input type="text" id="age" name="age"/>
+            <br>
+            <br>
+            <label for="height">Height</label>
+            <input type="text" id="height" name="height" placeholder="cm" />
+            <br>
+            <br>
+            <label for="weight">Weight</label>
+            <input type="text" id="weight" name="weight" placeholder="Kg" />
+            <br>
+            <br>
+            <label for="activity">Activity</label>
+           <select name="activity" id="activity">
+               <option value="1.2" selected>Sedentary (office job)</option>
+               <option value="1.375">Lightly active (1-2 days/week)</option>
+               <option value="1.55">Moderately active (3-5 days/week)</option>
+               <option value="1.725">Very active (6-7 days active)</option>
+               <option value="1.9">Extra active (2x per day)</option>
+           </select>
+            <button>Calculate</button>
+          </form>
+    </div>
+</body>
+</html>
